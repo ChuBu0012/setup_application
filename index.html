@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            font-size: 24px;
+            color: #444;
+        }
+        #require-links-container, #optional-links-container {
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        a.styled-link {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #1a73e8;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a.styled-link:hover {
+            background-color: #1558b0;
+            border-color: #1558b0;
+            color: #e2e2e2;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Required Links</h1>
+    <div id="require-links-container">
+        <a href="https://discord.com/download" target="_blank" class="styled-link">https://discord.com/download</a><br>
+<a href="https://code.visualstudio.com/download" target="_blank" class="styled-link">https://code.visualstudio.com/download</a><br>
+<a href="https://www.jetbrains.com/idea/download/?section=windows" target="_blank" class="styled-link">https://www.jetbrains.com/idea/download/?section=windows</a><br>
+
+    </div>
+    <button type="button" onClick="openRequireLinks()">Open Required Links</button>
+
+    <hr/>
+
+    <h1>Optional Links</h1>
+    <div id="optional-links-container">
+        <a href="https://www.notion.so/desktop" target="_blank" class="styled-link">https://www.notion.so/desktop</a><br>
+<a href="https://www.remnote.com/download" target="_blank" class="styled-link">https://www.remnote.com/download</a><br>
+<a href="https://brave.com/download/" target="_blank" class="styled-link">https://brave.com/download/</a><br>
+<a href="https://dev.mysql.com/downloads/mysql/" target="_blank" class="styled-link">https://dev.mysql.com/downloads/mysql/</a><br>
+<a href="https://dev.mysql.com/downloads/workbench/" target="_blank" class="styled-link">https://dev.mysql.com/downloads/workbench/</a><br>
+<a href="https://www.oracle.com/java/technologies/downloads/" target="_blank" class="styled-link">https://www.oracle.com/java/technologies/downloads/</a><br>
+<a href="https://www.python.org/downloads/" target="_blank" class="styled-link">https://www.python.org/downloads/</a><br>
+<a href="https://go.dev/doc/install" target="_blank" class="styled-link">https://go.dev/doc/install</a><br>
+<a href="https://nodejs.org/en" target="_blank" class="styled-link">https://nodejs.org/en</a><br>
+<a href="https://bun.sh/" target="_blank" class="styled-link">https://bun.sh/</a><br>
+<a href="https://www.postman.com/downloads/" target="_blank" class="styled-link">https://www.postman.com/downloads/</a><br>
+<a href="https://git-scm.com/downloads" target="_blank" class="styled-link">https://git-scm.com/downloads</a><br>
+<a href="https://sqlitebrowser.org/dl/" target="_blank" class="styled-link">https://sqlitebrowser.org/dl/</a><br>
+<a href="https://tomcat.apache.org/download-10.cgi" target="_blank" class="styled-link">https://tomcat.apache.org/download-10.cgi</a><br>
+<a href="https://www.wireshark.org/download.html" target="_blank" class="styled-link">https://www.wireshark.org/download.html</a><br>
+<a href="https://apps.microsoft.com/detail/9n0dx20hk701" target="_blank" class="styled-link">https://apps.microsoft.com/detail/9n0dx20hk701</a><br>
+<a href="https://www.canva.com/th_th/download/windows/" target="_blank" class="styled-link">https://www.canva.com/th_th/download/windows/</a><br>
+<a href="https://line.me/th/" target="_blank" class="styled-link">https://line.me/th/</a><br>
+<a href="https://www.microsoft.com/en-us/education/products/teams" target="_blank" class="styled-link">https://www.microsoft.com/en-us/education/products/teams</a><br>
+<a href="https://zoom.us/download" target="_blank" class="styled-link">https://zoom.us/download</a><br>
+<a href="https://www.docker.com/products/docker-desktop/" target="_blank" class="styled-link">https://www.docker.com/products/docker-desktop/</a><br>
+<a href="https://visualstudio.microsoft.com/downloads/" target="_blank" class="styled-link">https://visualstudio.microsoft.com/downloads/</a><br>
+<a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" class="styled-link">https://www.virtualbox.org/wiki/Downloads</a><br>
+<a href="https://www.microsoft.com/th-th/software-download/windows11" target="_blank" class="styled-link">https://www.microsoft.com/th-th/software-download/windows11</a><br>
+<a href="https://ubuntu.com/download/desktop" target="_blank" class="styled-link">https://ubuntu.com/download/desktop</a><br>
+<a href="https://desktop.github.com/download/" target="_blank" class="styled-link">https://desktop.github.com/download/</a><br>
+<a href="https://sourceforge.net/projects/dev-cpp/files/Binaries/Dev-C%2B%2B%204.9.9.2/devcpp-4.9.9.2_nomingw_setup.exe/download" target="_blank" class="styled-link">https://sourceforge.net/projects/dev-cpp/files/Binaries/Dev-C%2B%2B%204.9.9.2/devcpp-4.9.9.2_nomingw_setup.exe/download</a><br>
+    </div>
+    <button type="button" onClick="openOptionalLinks()">Open Optional Links</button>
+
+    <hr/>
+
+    <button type="button" onClick="openAllLinks()">Open All Links</button>
+
+    <script>
+        const openRequireLinks = () => {
+            const links = document.querySelectorAll('#require-links-container a');
+            links.forEach(link => {
+                window.open(link.href, '_blank');
+            });
+        }
+
+        const openOptionalLinks = () => {
+            const links = document.querySelectorAll('#optional-links-container a');
+            links.forEach(link => {
+                window.open(link.href, '_blank');
+            });
+        }
+
+        const openAllLinks = () => {
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                window.open(link.href, '_blank');
+            });
+        }
+    </script>
+</body>
+</html>
+        
